@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Tambah Produk</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Menyisipkan Bootstrap -->
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <!-- Menyisipkan JQuery dan Javascript Bootstrap -->
+    <script src="js/bootstrap.min.js"></script>
+    <!-- Menyisipkan CSS Custom -->
+    <link rel="stylesheet" href="css/myCss.css" />
+</head>
+
+<body>
+    <!-- Navbar -->
+    <nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-info">
+        <div class="container">
+            <a class="navbar-brand" href="#">99 Kasia Reklame - Admin</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+            <div class="navbar-nav ml-auto">
+                <a class="nav-link active" href="produk-admin.html">Produk </a>
+                <a class="nav-link" href="konfir-pesanan.html">Pesanan</a>
+                <a class="nav-link" href="login.html">
+                  <button type="button" class="btn btn-info btn-sm">Logout</button>
+                </a>
+            </div>
+            </div>
+        </div>
+      </nav>
+
+      <!-- Edit Produk -->
+      <div class="spacing-top"></div>
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-7 mb-5">
+                    <h1 class="mt-5 text-center">Tambah Produk</h1>
+                    <form action="produk-admin.html">
+                        <div class="form-group">
+                            <label for="namaProduk">Nama Produk</label>
+                            <input type="text" class="form-control" id="namaLengkap" placeholder="Nama Produk">
+                        </div>
+                        <div class="form-group">
+                            <label for="hargaProduk">Harga Produk (per meter kuadrat)</label>
+                            <input type="number" class="form-control" id="hargaLengkap" placeholder="Harga Produk">
+                        </div>
+                        <div class="form-group">
+                            <label for="detailProduk">Detail Produk</label>
+                            <textarea class="form-control" rows="3" id="detailProduk" placeholder="Detail produk"></textarea>
+                        </div>
+                        <p>Gambar Produk</p>
+                        <div class="custom-file mt-1 mb-3">
+                            <input type="file" class="custom-file-input" id="customFile">
+                            <label class="custom-file-label" for="customFile">Pilih Gambar</label>
+                        </div>
+                        <div class="text-center">
+                            <button type="submit" class="btn btn-primary px-5 btn-sm">Tambah Produk</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+</body>
+
+</html>
